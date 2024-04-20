@@ -11,13 +11,14 @@ const [weatherData, setWeatherData] =
 
   setWeatherData({
     ready: true,
-    temperature: response.data.temperature.current,
+        temperature: response.data.temperature.current,
     humidity: response.data.temperature.humidity,
     date: new Date(response.data.dt * 1000),
     description: response.data.condition.description,
     iconUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png",
     wind: response.data.wind.speed,
-    city: response.data.city
+    city: response.data.city,
+
   });
 
 
