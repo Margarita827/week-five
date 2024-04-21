@@ -1,27 +1,33 @@
 import React from "react";
+import ReactAnimatedWeather from "react-animated-weather";
 
 export default function WeatherIcon(props) {
  const codeMapping = {
-   "01d": "CLEAR_DAY",
-   "01n": "CLEAR_NIGHT",
-   "02d": "few clouds",
-   "02n": "few clouds",
-   "03d": "scattered clouds",
-   "03n": "scattered clouds",
-   "04d": "broken clouds",
-   "04n": "broken clouds",
-   "09d": "shower rain",
-   "09n": "shower rain",
-   "010d": "rain",
-   "010n": "rain",
-   "011d": "thunderstorm",
-   "011n": "thunderstorm",
-   "013d": "snow",
-   "013n": "snow",
-   "050d": "mist",
-   "050n": "mist",
+   "clear-sky-day": "CLEAR-DAY",
+   "clear-sky-night": "CLEAR-NIGHT",
+   "few-clouds-day": "PARTY_CLOUDY_DAY",
+   "few-clouds-night": "PARTY_CLOUDY_NIGHT",
+   "scattered-clouds-day": "PARTY_CLOUDY_DAY",
+   "scattered-clouds-night": "PARTY_CLOUDY_NIGHT",
+   "broken-clouds-day": "CLOUDY_DAY",
+   "broken-clouds-night": "CLOUDY_NIGHT",
+   "shower-rain-day": "RAIN",
+   "shower-rain-night": "RAIN",
+   "rain-day": "RAIN",
+   "rain-night": "RAIN",
+   "thunderstorm-day": "HEAVY_RAIN",
+   "thunderstorm-night": "HEAVY_RAIN",
+   "snow-day": "SNOW",
+   "snow-night": "SNOW",
+   "mist-day": "FOG",
+   "mist-night": "FOG",
  };
- };
+
+ const defaults = {
+    color: "black",
+    size: 112,
+    animate:true,
+ }
  
  
 
@@ -33,12 +39,10 @@ export default function WeatherIcon(props) {
         animate={defaults.animate}
       />
     );
+     };
 
 
 
 
 
-//    <img
-     //   src="http://darkskyapp.github.io/skycons/import ReactAnimatedWeather from 'react-animated-weather';"
-     //   alt={props.alt}
-     // />
+
