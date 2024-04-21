@@ -27,7 +27,7 @@ export default function WeatherIcon(props) {
     color: "black",
     size: 112,
     animate:true,
- }
+ };
  
  
 
@@ -39,7 +39,7 @@ export default function WeatherIcon(props) {
         animate={defaults.animate}
       />
     );
-     };
+     }
 
 
 
